@@ -4,7 +4,7 @@ import javax.persistence.NoResultException;
 
 public class AuthorNotFoundException extends NoResultException {
 
-    AuthorNotFoundException(Long id) {
+    public AuthorNotFoundException(Long id) {
         super("Could not find author " + id);
     }
 
