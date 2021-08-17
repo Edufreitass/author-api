@@ -1,4 +1,4 @@
-package com.example.exception;
+package com.example.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -17,7 +17,5 @@ public class ExceptionAdviceConfiguration {
     public String noResultExceptionHandler(NoResultException e) {
         return e.getMessage();
     }
-
-
 
 }
