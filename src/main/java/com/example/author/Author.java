@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.author;
 
 import com.example.validator.Validator;
 import org.springframework.lang.NonNull;
@@ -41,7 +41,7 @@ public class Author {
         setEmail(email);
     }
 
-    public static AuthorBuilder buider(@NonNull String name, @NonNull String email) {
+    public static AuthorBuilder builder(@NonNull String name, @NonNull String email) {
         return new AuthorBuilder(name, email);
     }
 
